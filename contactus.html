@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page Test</title>
+    <style>
+        .form-group input {
+            color: white;   
+            background-color: #1c1915;
+            top: 20%;
+            text-align: center;
+            display: block;
+            width: 50%;
+            padding: 14px;
+            margin: 40px auto;
+            font-size: large;
+            border-radius: 24px;
+        }
+
+        .container button {
+            background-color: #bb9f79;
+            color: #785050;
+            display: block;
+            width: 23%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 31px;
+        }
+
+        .container button:hover {
+            color: rgb(51, 49, 46);
+        }
+
+        .container button::shadow {
+            color: rgb(93, 88, 81);
+        }
+
+        .bgvideo {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        @media (min-aspect-ratio: 16/9) {
+            .bgvideo {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+
+        @media (max-aspect-ratio: 16/9) {
+            .bgvideo {
+                width: auto;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="bgvideo">
+            <source src="videos/lightning_-_88491 (720p).mp4" type="video/mp4">
+        </video>
+
+
+        <div class="container">
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Name">
+                    <input type="text" name="" placeholder="Enter Your Email Id">
+                    <input type="text" name="" placeholder="Enter Your Phone number">
+                </div>
+                <button class="btn">SUBMIT</button>
+            </form>
+        </div>
+</body>
+
+</html>
